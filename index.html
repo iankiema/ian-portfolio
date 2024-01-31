@@ -145,16 +145,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false;" action="https://formspree.io/f/xknlwvrl" method="POST" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input id="name" name="Name" type="text" placeholder="Full Name" required>
+                <input id="email" name="Email" type="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input id="mobile-number" name="mobile-number" type="number" placeholder="Mobile Number">
+                <input id="subject" name="subject" type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea id="message" name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -179,5 +180,8 @@
 
     <!---custom js -->
     <script src="script.js"></script>
+
+    <!---send mail-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
