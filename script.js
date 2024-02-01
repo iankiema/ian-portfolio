@@ -81,4 +81,16 @@ message => alert("Your message has been sent!")
 );
 }
 
+function toggleReadMore() {
+    let intro = document.getElementById('intro');
+    let btn = document.getElementById('readMoreBtn');
+    if (intro.style.maxHeight === "150px" || intro.style.maxHeight === "") {
+        intro.style.maxHeight = "1000px";
+        btn.textContent = "Read Less";
+    } else {
+        intro.style.maxHeight = "150px";
+        btn.textContent = "Read More";
+    }
+}
+
 

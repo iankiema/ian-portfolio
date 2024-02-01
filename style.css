@@ -127,6 +127,12 @@ span {
     font-size: 1.6rem;
 }
 
+#intro {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
