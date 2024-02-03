@@ -83,14 +83,66 @@ message => alert("Your message has been sent!")
 
 function toggleReadMore() {
     let intro = document.getElementById('intro');
+
     let btn = document.getElementById('readMoreBtn');
+
     if (intro.style.maxHeight === "150px" || intro.style.maxHeight === "") {
         intro.style.maxHeight = "1000px";
         btn.textContent = "Read Less";
     } else {
         intro.style.maxHeight = "150px";
+
         btn.textContent = "Read More";
     }
 }
+
+function toggleReadMore1() {
+    let intro1 = document .getElementById('intro1')
+ 
+    let btn1 = document.getElementById('readMoreBtn1');
+   
+
+    if (intro1.style.maxHeight === '150px' || intro1.style.maxHeight === "") {
+            intro1.style.maxHeight = '1000px'
+            btn1.textContent = 'Read Less'
+        
+        } else {
+        intro1.style.maxHeight = "150px";
+        btn1.textContent = "Read More";
+    }
+}
+
+function toggleReadMore2() {
+    let intro2 = document .getElementById('intro2')
+ 
+    let btn2 = document.getElementById('readMoreBtn2');
+   
+
+    if (intro2.style.maxHeight === '150px' || intro2.style.maxHeight === "") {
+            intro2.style.maxHeight = '500px'
+            btn2.textContent = 'Read Less'
+        
+        } else {
+        intro2.style.maxHeight = "150px";
+        btn2.textContent = "Read More";
+    }
+}
+
+function toggleReadMore3() {
+    let intro3 = document .getElementById('intro3')
+ 
+    let btn3= document.getElementById('readMoreBtn3');
+   
+
+    if (intro3.style.maxHeight === '150px' || intro3.style.maxHeight === "") {
+            intro3.style.maxHeight = '500px'
+            btn3.textContent = 'Read Less'
+        
+        } else {
+        intro3.style.maxHeight = "150px";
+        btn3.textContent = "Read More";
+    }
+}
+
 
 

@@ -15,7 +15,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: rgb(60, 255, 0);
+    --main-color: #0ef;
 }
 
 html {
@@ -164,6 +164,7 @@ span {
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -229,6 +230,11 @@ span {
     transition: .5s ease;
 }
 
+.services-box {
+   height: 600px;
+   padding-bottom: 0;
+    
+}
 .services-container .services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
@@ -334,6 +340,19 @@ span {
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+
+.portfolio-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-links ul {
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 20%;
 }
 
 .code-link {
