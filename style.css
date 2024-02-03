@@ -15,7 +15,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: rgb(60, 255, 0);
+    --main-color: #0ef;
 }
 
 html {
@@ -127,6 +127,12 @@ span {
     font-size: 1.6rem;
 }
 
+#intro {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -158,6 +164,7 @@ span {
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -223,6 +230,11 @@ span {
     transition: .5s ease;
 }
 
+.services-box {
+   height: 600px;
+   padding-bottom: 0;
+    
+}
 .services-container .services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
@@ -307,7 +319,7 @@ span {
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: .3rem 0 1rem;
     background: linear-gradient(rgba(0,0,0),var(--bg-color));
     padding: 1rem;
@@ -328,6 +340,34 @@ span {
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+
+.portfolio-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-links ul {
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 20%;
+}
+
+.code-link {
+    display: flex;
+}
+
+.code-link a {
+    margin-left: 2rem;
+    padding: 3rem;
+    background: var(--bg-color);
+    color: var(--main-color);
+}
+
+.code-link a i {
+    color: var(--main-color);
 }
 
 
@@ -414,6 +454,10 @@ span {
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+    }
+
+    .services-box {
+        height: auto;
     }
 }
 

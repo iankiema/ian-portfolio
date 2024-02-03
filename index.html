@@ -29,31 +29,45 @@
             <h3>Hello, It's Me</h3>
             <h1>Ian Kiema</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nihil, magni similique minima officiis itaque quos aliquam ex? </p>
+            <p>I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me </p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-github' ></i></a>
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="assets/Ian_Kiema_Resume.pdf" download="Ian_Kiema_Resume.pdf" class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="assets/ian-portifolio-2.png" alt="">
+            <img src="assets/ian portfolio11.png" alt="">
         </div>
     </section>
 
     <!--About Section-->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="assets/ian-portifolio.png" alt="">
+            <img src="assets/ian portfolio12.png" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Full Stack Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium beatae alias ab eum. Dolor, tenetur voluptatibus placeat rerum temporibus iure sint voluptate quas reiciendis molestias deserunt. Unde sequi recusandae consectetur ratione nam dolores molestias. Culpa incidunt ut rem itaque, ad cumque hic? Harum nihil velit officiis eaque voluptate officia.</p>
-            <a href="#" class="btn">Read More</a>
+            <p id="intro">Hey there, fellow explorer! I'm Ian Kiema, a passionate Full Stack Developer who embarked on an extraordinary journey with Microverse, a program that transformed my coding odyssey into a thrilling adventure.<br>
+
+                👨‍💻 Armed with an insatiable curiosity and an unwavering dedication to excellence, I've delved deep into the realms of web development. From crafting pixel-perfect front-end interfaces that captivate users to architecting robust back-end systems that power seamless experiences – I thrive on turning innovative ideas into functional, elegant, and user-centric solutions.<br>
+                
+                🛠️ My toolkit is as diverse as my interests. I wield languages like JavaScript, Ruby, and SQL with finesse, dance with frameworks like React and Ruby on Rails, and orchestrate databases like MongoDB and PostgreSQL. The challenge of building scalable, efficient, and maintainable applications fuels my creative fire.<br>
+                
+                🌟 The Microverse experience wasn't just a program; it was a catalyst for growth. It sharpened my problem-solving skills, honed my ability to collaborate across time zones, and instilled in me a resilience to tackle any coding conundrum that comes my way.<br>
+                
+                🌐 In the vast landscape of the digital realm, I find joy in creating digital experiences that not only meet but exceed expectations. Whether it's turning a blank canvas into a visually stunning website or optimizing database queries for peak performance, I'm here to elevate your digital presence.<br>
+                
+                🔍 Beyond the code, you'll find me immersed in the worlds of technology trends, gaming, and the latest advancements in the tech cosmos. As a perpetual learner, I'm always on the lookout for the next challenge to conquer and the next skill to add to my ever-expanding repertoire.<br>
+                
+                Let's build something extraordinary together. Whether you're seeking a dynamic Full Stack Developer or simply want to geek out over the latest tech innovations, I'm just a click away.<br>
+                
+                Happy coding! 🚀</p>
+            <a href="#about" id="readMoreBtn" class="btn" onclick="toggleReadMore()">Read More</a>
         </div>
     </section>
 
@@ -66,20 +80,20 @@
             <div class="services-box">
                 <i class='bx bx-code-alt' ></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sed beatae quas quia voluptatibus nulla autem eaque obcaecati possimus officiis!</p>
-                <a href="#" class="btn">Read More</a>
+                <p id="intro1">Our web development team excels in building robust, scalable, and efficient web solutions tailored to meet your unique business needs. Whether you're looking for a sleek and responsive website, a powerful web application, or e-commerce functionality, we leverage the latest technologies to ensure a seamless user experience.</p>
+                <button id="readMoreBtn1" class="btn" >Read More</button>
             </div>
             <div class="services-box">
                 <i class='bx bxs-paint'></i>
-                <h3>Graphic Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sed beatae quas quia voluptatibus nulla autem eaque obcaecati possimus officiis!</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Web Design</h3>
+                <p id="intro2">First impressions matter, and our web design experts understand the art of creating visually appealing and user-friendly interfaces. From captivating layouts to intuitive navigation, we focus on translating your brand identity into a captivating online presence that leaves a lasting impression on your visitors.</p>
+                <button href="#services" id="readMoreBtn2" class="btn" >Read More</button>
             </div>
             <div class="services-box">
                 <i class='bx bx-bar-chart-alt'></i>
                 <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sed beatae quas quia voluptatibus nulla autem eaque obcaecati possimus officiis!</p>
-                <a href="#" class="btn">Read More</a>
+                <p id="intro3">In the fast-paced digital landscape, effective digital marketing is crucial for success. Our digital marketing strategies are designed to elevate your brand visibility, attract your target audience, and drive conversions. From search engine optimization (SEO) to social media management, we implement data-driven approaches to ensure your business stands out in the competitive online market.</p>
+                <button href="#services" id="readMoreBtn3" class="btn" onclick=>Read More</button>
             </div>
          
         </div>
@@ -94,49 +108,93 @@
             <div class="portfolio-box">
                 <img src="assets/budget app.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Budget Track Website</h4>
+                    <p>The Budget App is centered around the creation of a mobile web application designed for budget management. In this application, users can efficiently oversee their financial transactions by categorizing them. By doing so, they can gain insight into their spending patterns, allowing them to track their expenses."
+                    </p>
+                    <div class="portfolio-links">
+                        <div class="code-link">
+                            <a href="https://cizzla.onrender.com/" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                            <a href="https://github.com/iankiema/Budget-App" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                         </div>
+                        
+                         <ul>
+                            <li>Ruby on Rails</li>
+                         </ul>
+                    </div>
+                   
+                    
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/space travelers hub.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Space Travelers Hub</h4>
+                    <p>This is a commercial website for a company called Space Travelers Hub. This website enables users to reserve rockets and book missions for going to space.</p>
+                    <div class="portfolio-links">
+                        <div class="code-link">
+                            <a href="https://space-mission-website.netlify.app/" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                            <a href="https://github.com/iankiema/Space-X-Website" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                        </div>
+
+                        <ul>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/online bookstore.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Online Bookstore</h4>
+                    <p>Bookstore website is an application used to provide the user with online books that they can access,comment and like.</p>
+
+                    <div class="portfolio-links">
+                        <div class="code-link">
+                            <a href="https://online-bookstore-module.netlify.app/" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                            <a href="https://github.com/iankiema/Bookstore-Capstone" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                        </div>
+
+                        <ul>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                   
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/Harmony fest.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Harmony Fest Website</h4>
+                    <p>Harmony Fest is an exciting and innovative online platform that celebrates the beauty of music and brings together music enthusiasts from all around the world.This website was built with HTML, CSS and Javascript.</p>
+                    <div class="code-link">
+                        <a href="https://iankiema.github.io/Harmony-Fest" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/iankiema/Harmony-Fest" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/Country details.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Country Details App</h4>
+                    <p>Country Info Webapp is an application that allows users to access the details of various countries that have been populated on the homepage.</p>
+                    <div class="code-link">
+                        <a href="https://dev--country-details-website.netlify.app/" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/iankiema/Country-Info-webapp" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="assets/Awesome books.jpg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quis?</p>
-                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                    <h4>Awesome Books</h4>
+                    <p>Awesome Bookstore React website is an application used to add,display and delete books.</p>
+                    <div class="code-link">
+                        <a href="https://awesomebookstores.netlify.app/" target="_blank">Demo<i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/iankiema/Bookstore-Capstone" target="_blank">Code<i class='bx bx-code'></i></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,16 +203,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form onsubmit="sendEmail(); reset(); return false;" action="https://formspree.io/f/xknlwvrl" method="POST" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input id="name" name="Name" type="text" placeholder="Full Name" required>
+                <input id="email" name="Email" type="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input id="mobile-number" name="mobile-number" type="number" placeholder="Mobile Number">
+                <input id="subject" name="subject" type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea id="message" name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -179,5 +238,8 @@
 
     <!---custom js -->
     <script src="script.js"></script>
+
+    <!---send mail-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
