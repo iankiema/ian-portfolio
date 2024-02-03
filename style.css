@@ -455,6 +455,10 @@ span {
     html {
         font-size: 55%;
     }
+
+    .services-box {
+        height: auto;
+    }
 }
 
 @media (max-width:991px) {
