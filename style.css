@@ -687,6 +687,29 @@ animation-delay: -10s; }
     .portfolio-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .image-container {
+        margin-bottom: 30px;
+    
+    }
+
+    .image-container img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-anime {
+        margin-bottom: 70px;
+    }
+
+    .skills li {
+        margin-bottom: 10px;
+    }
+
+    .portfolio-layer {
+        overflow: scroll;
+    }
+
 }
 
 @media (max-width:450px) {
