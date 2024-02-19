@@ -38,7 +38,6 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -51,23 +50,30 @@ section {
 }
 
 .logo {
-    font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.navbar {
+    padding-right: 20px;
 }
 
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    padding: 20px;
+    outline: none;
+    margin: 0;
     transition: .3s;
 }
 
 .navbar a:hover, 
 .navbar a.active {
     color: var(--main-color);
-    background: transparent;
+    background: var(--second-bg-color);
 }
 
 #menu-icon {
@@ -183,9 +189,55 @@ span {
     background: var(--second-bg-color);
 }
 
-.about-img img {
-    width: 45vh;
+.about-img {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
 }
+
+.image-container {
+    margin-bottom: 70%;
+}
+.icons-anime {
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+    margin: auto; 
+  }
+
+.about-img .icons-anime img {
+    width: 40px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-20%, -20%); /* Center each image within the circular div */
+    animation: rotateAnimation 10s infinite linear; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+      }
+}
+
+.icons-anime img:nth-child(2) {
+    animation-delay: -2s;  }
+.icons-anime img:nth-child(3) {
+animation-delay: -4s; }
+.icons-anime img:nth-child(4) {
+animation-delay: -6s; }
+.icons-anime img:nth-child(5) {
+animation-delay: -8s; }
+.icons-anime img:nth-child(6) {
+animation-delay: -10s; }
+
 
 .heading {
     text-align: center;
@@ -205,6 +257,45 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+.about-break {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.my-abilities {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 87px;
+  }
+
+  .skills h3 {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--second-bg-color);
+    margin-bottom: 44px;
+    background: var(--main-color);
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+  }
+  
+  .skills ul li {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 43px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
 
 /* Services */
 
@@ -488,8 +579,41 @@ span {
 }
 
 @media (max-width:768px) {
+    .about-img {
+        /* flex-direction: row; */
+        justify-content: center;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+
+ 
+
+    .icons-anime {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .my-abilities {
+        flex-direction: column;
+      }
+
+    .my-abilities .skill img {
+        display: none;
+        width: 10px;
+    }
     #menu-icon {
         display: block;
+    }
+
+    .skills ul li {
+        text-align: center;
     }
 
     .navbar {
@@ -540,6 +664,12 @@ span {
         margin-top: 1rem;
     }
 
+    .image-container {
+        margin-left: auto;
+        justify-content: center;
+        margin-bottom: 30%;
+    }
+
     .services h2 {
         margin-bottom: 3rem;
     }
@@ -557,6 +687,29 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .image-container {
+        margin-bottom: 30px;
+    
+    }
+
+    .image-container img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-anime {
+        margin-bottom: 70px;
+    }
+
+    .skills li {
+        margin-bottom: 10px;
+    }
+
+    .portfolio-layer {
+        overflow: scroll;
+    }
+
 }
 
 @media (max-width:450px) {
